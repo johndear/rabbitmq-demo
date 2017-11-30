@@ -1,4 +1,5 @@
-RabbitMQ交换机Exchange类型介绍: http://blog.csdn.net/rainday0310/article/details/22082503
+RabbitMQ交换机Exchange类型介绍
+	http://blog.csdn.net/rainday0310/article/details/22082503
 
 生产者与消费者对应关系：
 Direct Exchange： 处理路由键。发送到与该交换机绑定的精确匹配队列: Channel.queueBind(queue, exchange, routingKey)
