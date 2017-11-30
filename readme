@@ -1,5 +1,5 @@
 RabbitMQ交换机Exchange类型介绍: http://blog.csdn.net/rainday0310/article/details/22082503
-Direct Exchange： 处理路由键。发送到与该交换机绑定的精确匹配队列: Channel.queueBind(queue, exchange, routingKey)
-Fanout Exchange： 不处理路由键。发送到与该交换机绑定的所有队列: Channel.queueBind(queue, exchange, null)
-Topic Exchange： 处理路由键。发送到与该交换机绑定的模式匹配队列: Channel.queueBind(queue, exchange, routingKey)
+Direct Exchange： 处理路由键。发送到与该交换机绑定的精确匹配队列(一对一): Channel.queueBind(queue, exchange, routingKey)
+Fanout Exchange： 不处理路由键。发送到与该交换机绑定的所有队列(一对多): Channel.queueBind(queue, exchange, null)
+Topic Exchange： 处理路由键。发送到与该交换机绑定的模式匹配队列(一对一、一对多): Channel.queueBind(queue, exchange, routingKey)
 Headers exchange：还没有仔细研究
