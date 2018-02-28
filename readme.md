@@ -7,7 +7,7 @@
 	
 	Fanout Exchange(一对多)：
  	不处理路由键。发送到与该交换机绑定的所有队列: Channel.queueBind(queue, exchange, null)
-	<img src="./xxx.png" width = "300" height = "200" alt="图片名称" align=center />
+	<img src="http://dl.iteye.com/upload/attachment/264104/0ec0f465-49c6-361c-ae2b-dd951a6ed1a9.png" width = "300" height = "200" alt="图片名称" align=center />
 	
 	Topic Exchange(一对一/一对多)： 
 	处理路由键。发送到与该交换机绑定的模式匹配队列: Channel.queueBind(queue, exchange, routingKey)
