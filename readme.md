@@ -4,7 +4,7 @@
 ## 生产者与消费者对应关系：
 * Direct Exchange(一对一)： 
   处理路由键。发送到与该交换机绑定的精确匹配队列: Channel.queueBind(queue, exchange, routingKey)
-  <img src="http://dl.iteye.com/upload/attachment/264104/0ec0f465-49c6-361c-ae2b-dd951a6ed1a9.png" width = "300" height = "200" alt="图片名称" align=center />
+  <br><img src="http://dl.iteye.com/upload/attachment/264104/0ec0f465-49c6-361c-ae2b-dd951a6ed1a9.png" width = "300" height = "200" alt="图片名称" align=center />
 * Fanout Exchange(一对多)：
   不处理路由键。发送到与该交换机绑定的所有队列: Channel.queueBind(queue, exchange, null)
 * Topic Exchange(一对一/一对多)： 
