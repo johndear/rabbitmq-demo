@@ -1,4 +1,4 @@
-RabbitMQ交换机Exchange类型介绍
+# RabbitMQ交换机Exchange类型介绍
 	http://blog.csdn.net/rainday0310/article/details/22082503
 
 生产者与消费者对应关系：
