@@ -32,7 +32,7 @@ public class ReceiveLogs1 {
 		};
 		channel.basicConsume(queueName, true, consumer);
 		
-		// 消息确认机制（手动应答）
+		// 消息应答ack机制（手动应答）
 		//		Consumer consumer = new DefaultConsumer(channel) {
 //			@Override
 //			public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
