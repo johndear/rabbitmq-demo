@@ -2,7 +2,7 @@
 	http://blog.csdn.net/rainday0310/article/details/22082503
 
 ## 生产者与消费者对应关系：
-* Default Exchange
+* Default Exchange  
   这种是特殊的Direct Exchange，是rabbitmq内部默认的一个交换机。该交换机的name是空字符串，所有queue都默认binding 到该交换机上。所有binding到该交换机上的queue，routing-key都和queue的name一样。  
   
 * Direct Exchange(一对一)：    
