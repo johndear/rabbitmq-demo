@@ -7,11 +7,11 @@
   <img src="http://dl.iteye.com/upload/attachment/264104/0ec0f465-49c6-361c-ae2b-dd951a6ed1a9.png" width = "450" height = "270" alt="图片名称" align=center />  
   
 * Fanout Exchange(一对多)：  
-  不处理路由键。发送到与该交换机绑定的所有队列: Channel.queueBind(queue, exchange, null)    
+  扇形交换机，不处理路由键。发送到与该交换机绑定的所有队列: Channel.queueBind(queue, exchange, null)    
   <img src="http://dl.iteye.com/upload/attachment/264106/0bbdcd3d-9fc6-3107-b7e0-db67c174d46a.png" width = "450" height = "270" alt="图片名称" align=center />  
   
 * Topic Exchange(一对一/一对多)：   
-  处理路由键。发送到与该交换机绑定的模式匹配队列: Channel.queueBind(queue, exchange, routingKey)  
+  通配符交换机,，处理路由键。发送到与该交换机绑定的模式匹配队列: Channel.queueBind(queue, exchange, routingKey)  
   <img src="http://dl.iteye.com/upload/attachment/264108/11171ab4-af07-3ff6-bdf6-d1febda679c3.png" width = "450" height = "270" alt="图片名称" align=center />  
   
 * Headers Exchange(还没有仔细研究)：  
